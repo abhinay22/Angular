@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello Welcome to AngularJs</title>
+    <script src="angular.min.js"></script>
+    <script src="eventModule.js"></script>
+    <script src="eventController.js"></script>
+</head>
+<body>
+<div ng-app="eventModule">
+    {{3+3}}
+<table ng-controller="eventController">
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>City</th>
+</tr>
+<tr ng-repeat="talk in talks">
+<td>{{talk.id}}</td>
+<td>{{talk.name}}</td>
+<td>{{talk.city}}</td>
+</tr>
+</table>
+</table>
+</div>
+</body>
+</html>

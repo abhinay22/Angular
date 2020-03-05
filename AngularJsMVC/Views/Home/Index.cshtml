@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<div>
+    <table ng-init="talks=@ViewBag.AngularObject">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr ng-repeat="talk in talks">
+            <td>{{talk.Id}}</td>
+            <td>{{talk.Name}}</td>
+            <td>{{talk.City}}</td>
+        </tr>
+    </table>
+
+
+</div>
